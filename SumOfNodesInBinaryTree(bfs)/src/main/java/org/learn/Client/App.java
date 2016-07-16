@@ -1,20 +1,20 @@
 package org.learn.Client;
 
-import org.learn.Question.SumOfBinaryTree;
 import org.learn.Question.Node;
+import org.learn.Question.SumOfNodes;
 
 public class App {
 	public static void main(String[] args) {
 		// root level 0
-		Node A = Node.createNode(100);
+		Node A = Node.createNode(55);
 		// Level 1
 		Node B = Node.createNode(50);
-		Node C = Node.createNode(150);
+		Node C = Node.createNode(40);
 		// Level 2
 		Node D = Node.createNode(25);
 		Node E = Node.createNode(80);
-		Node F = Node.createNode(125);
-		Node G = Node.createNode(160);
+		Node F = Node.createNode(45);
+		Node G = Node.createNode(90);
 
 		// connect Level 0 and 1
 		A.left = B;
@@ -25,6 +25,6 @@ public class App {
 		C.left = F;
 		C.right = G;
 
-		System.out.println("Sum of Binary Tree : " + SumOfBinaryTree.sumOfBinaryTree(A));
+		System.out.println("Sum of Binary Tree : " + SumOfNodes.sumOfNodes(A));
 	}
 }

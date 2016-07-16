@@ -3,11 +3,11 @@ package org.learn.Question;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SumOfBinaryTree {
+public class SumOfNodes {
 
-	public static int sumOfBinaryTree(Node root) {
+	public static int sumOfNodes(Node root) {
 		if (root == null) {
-			System.out.println("Queue is empty");
+			System.out.println("Tree is empty");
 			return -1;
 		}
 		Queue<Node> queue = new LinkedList<Node>();
