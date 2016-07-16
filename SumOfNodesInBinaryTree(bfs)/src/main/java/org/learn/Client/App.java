@@ -24,7 +24,7 @@ public class App {
 		B.right = E;
 		C.left = F;
 		C.right = G;
-
-		System.out.println("Sum of Binary Tree : " + SumOfNodes.sumOfNodes(A));
+		int totalSum = SumOfNodes.sumOfNodes(A);
+		System.out.println("Sum of nodes in a binary tree : " + totalSum);
 	}
 }
